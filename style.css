@@ -1,0 +1,63 @@
+/* Fonts - Elegance from Canva Version */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+    --color-primary: #2c3e50; /* Deep Blue */
+    --color-accent: #5a8f7b;  /* Sage Green */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.font-display {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.accent-text {
+    color: var(--color-accent);
+}
+
+/* Glassmorphism for Navbar */
+.glass {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Canva Gradient Button Style */
+.cta-button {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #3d5a73 100%);
+    box-shadow: 0 4px 15px rgba(44, 62, 80, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.3);
+}
+
+/* Accordion Animations */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 600px;
+}
+
+.accordion-item.active .chevron {
+    transform: rotate(180deg);
+}
+
+/* Smooth Entrance Animation */
+.fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
