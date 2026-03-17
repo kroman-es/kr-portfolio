@@ -1,4 +1,4 @@
-# Web-KIRA Portfolio
+# KIRA Portfolio
 
 Professional portfolio for **Karelys Román Angarita**, focused on Administrative Management and ISO Quality Standards.
 
