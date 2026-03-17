@@ -1,7 +1,7 @@
 /**
- * Navigation between Views
- * @param {string} pageId - ID of the page to show
- * @param {string} sectionId - Optional ID to scroll to
+ * Navigation handler to switch between Home and Portfolio views
+ * @param {string} pageId - Target view ID
+ * @param {string} sectionId - Target section ID to scroll to
  */
 function showPage(pageId, sectionId = null) {
     const home = document.getElementById('home-page');
@@ -10,7 +10,6 @@ function showPage(pageId, sectionId = null) {
     if (pageId === 'home') {
         home.classList.remove('hidden');
         portfolio.classList.add('hidden');
-        
         if (sectionId) {
             const el = document.getElementById(sectionId);
             if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -25,19 +24,17 @@ function showPage(pageId, sectionId = null) {
 }
 
 /**
- * Accordion Toggle logic
- * @param {HTMLElement} button - The button clicked
+ * Handles the accordion open/close functionality
+ * @param {HTMLElement} button - The button clicked to toggle
  */
 function toggleAccordion(button) {
     const item = button.parentElement;
     const isActive = item.classList.contains('active');
     
-    // Close all other accordion items
-    document.querySelectorAll('.accordion-item').forEach(i => {
-        i.classList.remove('active');
-    });
-
-    // Open the current item if it was closed
+    // Close all other items first
+    document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+    
+    // Open the target item if it was previously closed
     if (!isActive) {
         item.classList.add('active');
     }

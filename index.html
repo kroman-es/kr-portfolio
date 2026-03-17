@@ -1,102 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karelys Román | Gestión Administrativa & Calidad ISO</title>
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-[#fafafa] text-gray-700">
+<body>
 
     <nav class="fixed w-full z-50 glass">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <button onclick="showPage('home')" class="font-display text-2xl font-bold tracking-tight text-slate-800">KR.</button>
-            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
-                <button onclick="showPage('home')" class="hover:text-[#5a8f7b] transition">Inicio</button>
-                <button onclick="showPage('home', 'sobre-mi')" class="hover:text-[#5a8f7b] transition">Sobre mí</button>
-                <button onclick="showPage('home', 'experiencia')" class="hover:text-[#5a8f7b] transition">Experiencia</button>
-                <button onclick="showPage('portfolio')" class="text-[#5a8f7b] font-bold transition">Proyectos & Excel</button>
+            <button onclick="showPage('home')" class="text-2xl font-display font-bold tracking-tight"
+                style="color: var(--color-primary)">KR.</button>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <button onclick="showPage('home')" class="hover:text-[var(--color-accent)] transition">Inicio</button>
+                <button onclick="showPage('home', 'sobre-mi')" class="hover:text-[var(--color-accent)] transition">Sobre
+                    mí</button>
+                <button onclick="showPage('home', 'experiencia')"
+                    class="hover:text-[var(--color-accent)] transition">Experiencia</button>
+                <button onclick="showPage('portfolio')" class="font-semibold transition"
+                    style="color: var(--color-accent)">Proyectos & Excel</button>
             </div>
-            <a href="#contacto" class="cta-button text-white px-5 py-2 rounded-full text-sm font-semibold transition">Contáctame</a>
+            <a href="#contacto" class="btn-primary px-6 py-2 rounded-lg text-sm font-semibold">Contáctame</a>
         </div>
     </nav>
 
     <main id="home-page" class="fade-in">
-        <section id="inicio" class="pt-32 pb-20 px-6">
-            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
-                <div class="md:w-2/3">
-                    <div class="inline-flex items-center gap-2 bg-[#e8f5f0] text-[#5a8f7b] px-3 py-1 rounded-full text-xs font-bold mb-4 uppercase tracking-wider">
-                        <i class="fas fa-certificate"></i> Experta en Normativas ISO
-                    </div>
-                    <h1 class="font-display text-5xl md:text-7xl font-semibold text-gray-800 leading-tight mb-6">
-                        Gestión con <span class="accent-text">trazabilidad</span> y rigor científico.
+        <section id="inicio" class="pt-48 pb-32 px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-4xl">
+                    <p class="font-body text-xs md:text-sm font-bold tracking-[0.2em] mb-4 uppercase"
+                        style="color: var(--color-accent)">
+                        Bienvenido a mi portafolio
+                    </p>
+                    <h1 class="font-display font-bold text-[4.5rem] md:text-[7.5rem] leading-none mb-4"
+                        style="color: var(--color-primary); letter-spacing: -0.02em;">
+                        Karelys Román
                     </h1>
-                    <p class="text-xl text-gray-500 mb-8 max-w-2xl font-light leading-relaxed">
-                        Soy Karelys Román. Aplico la metodología científica y los estándares de <b>calidad ISO</b> para optimizar procesos administrativos y financieros.
+                    <h2 class="font-display text-3xl md:text-[3.25rem] mb-10 leading-tight"
+                        style="color: var(--color-accent);">
+                        Gestión Administrativa con rigor Analítico
+                    </h2>
+                    <p class="body-text mb-12 max-w-2xl text-lg md:text-xl text-slate-600">
+                        Fusiono la metodología científica con los estándares internacionales de calidad para optimizar
+                        procesos administrativos y financieros.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <button onclick="showPage('portfolio')" class="cta-button text-white px-8 py-3 rounded-xl font-medium transition shadow-lg">
-                            Ver Casos de Estudio (Excel/BI)
+                        <button onclick="showPage('portfolio')"
+                            class="btn-primary px-8 py-4 rounded-xl font-medium shadow-lg shadow-slate-200/50">
+                            Casos de Estudio
                         </button>
-                        <a href="#experiencia" class="border border-slate-300 px-8 py-3 rounded-xl font-medium hover:bg-white transition text-gray-600">
+                        <a href="#experiencia"
+                            class="btn-accent px-8 py-4 rounded-xl font-medium transition flex items-center justify-center hover:bg-[var(--color-accent)] hover:text-white">
                             Experiencia Laboral
                         </a>
                     </div>
                 </div>
-                <div class="md:w-1/3 mt-12 md:mt-0 flex justify-center">
-                    <div class="w-64 h-64 bg-indigo-50 rounded-2xl rotate-3 flex items-center justify-center relative shadow-2xl">
-                        <div class="absolute inset-0 bg-[#5a8f7b] rounded-2xl -rotate-6 opacity-10"></div>
-                        <i class="fas fa-microscope text-7xl text-[#5a8f7b]"></i>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <section id="sobre-mi" class="py-20 bg-white shadow-inner">
+        <section id="sobre-mi" class="py-24 bg-white">
             <div class="max-w-6xl mx-auto px-6">
-                <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="grid md:grid-cols-2 gap-20 items-center">
                     <div>
-                        <span class="accent-text font-bold tracking-widest uppercase text-xs">Calidad y Trazabilidad</span>
-                        <h2 class="font-display text-4xl font-bold mt-2 mb-6 text-gray-800">Mentalidad metódica para resultados eficientes</h2>
-                        <div class="space-y-4 text-gray-600 leading-relaxed">
+                        <span class="label-text mb-4 block">Mi Trayectoria</span>
+                        <h3 class="section-title mb-8 text-2xl">Mentalidad metódica para resultados eficientes</h3>
+                        <div class="space-y-6 body-text">
                             <p>
-                                Mi formación como <strong>Licenciada en Química</strong> y mi experiencia docente me enseñaron que el éxito de cualquier proceso reside en el orden y la trazabilidad. No entiendo la gestión administrativa sin un control de calidad riguroso.
+                                Mi formación como <strong>Licenciada en Química</strong> forjó mi capacidad de análisis
+                                y mi gusto particular por encontrar soluciones. No entiendo la gestión administrativa
+                                sin un control de calidad riguroso.
                             </p>
                             <p>
-                                Conozco y aplico las <strong>normativas ISO</strong> para asegurar que cada documento, factura o protocolo cumpla con los estándares más altos, facilitando auditorías y mejorando la eficiencia operativa del equipo.
-                            </p>
-                            <p>
-                                Tras certificarme en <strong>Administración y Finanzas</strong> en España, he unido mi capacidad analítica con herramientas modernas para ofrecer una gestión integral que va más allá de lo puramente operativo.
+                                Tras certificarme en <strong>Administración y Finanzas</strong> en España, he unido mi
+                                capacidad analítica con herramientas modernas para ofrecer una gestión que garantice la
+                                <strong>trazabilidad</strong> en cada proceso.
                             </p>
                         </div>
                     </div>
-                    <div class="bg-[#fafafa] p-8 rounded-3xl border border-gray-100 shadow-sm">
-                        <h3 class="font-display text-2xl font-bold mb-6 text-gray-800 underline decoration-[#5a8f7b] decoration-4">Competencias Clave</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm text-[#5a8f7b]"><i class="fas fa-file-contract"></i></div>
+                    <div class="card-surface p-10 rounded-3xl">
+                        <h4 class="label-text mb-8 border-b pb-4">Competencias de Valor</h4>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-clipboard-check mt-1 accent-icon text-xl"></i>
                                 <div>
-                                    <p class="font-semibold text-sm">Normas ISO & Calidad</p>
-                                    <p class="text-xs text-slate-500">Gestión por procesos y mejora continua.</p>
+                                    <p class="font-semibold text-slate-800">Normas ISO & Procesos</p>
+                                    <p class="text-sm text-slate-500">Orientación total a la calidad y la mejora
+                                        continua.</p>
                                 </div>
                             </div>
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm text-[#5a8f7b]"><i class="fas fa-chart-bar"></i></div>
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-chart-line mt-1 accent-icon text-xl"></i>
                                 <div>
-                                    <p class="font-semibold text-sm">Análisis de Datos</p>
-                                    <p class="text-xs text-slate-500">Excel Avanzado y Power BI para toma de decisiones.</p>
+                                    <p class="font-semibold text-slate-800">Análisis Avanzado</p>
+                                    <p class="text-sm text-slate-500">Dominio de Excel, Power BI y tratamiento de datos.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm text-[#5a8f7b]"><i class="fas fa-language"></i></div>
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-globe mt-1 accent-icon text-xl"></i>
                                 <div>
-                                    <p class="font-semibold text-sm">Idiomas</p>
-                                    <p class="text-xs text-slate-500">Inglés C1.1 (EOI) y Francés A2.</p>
+                                    <p class="font-semibold text-slate-800">Comunicación Multilingüe</p>
+                                    <p class="text-sm text-slate-500">Inglés C1.1 (EOI) y Francés A2 (Alliance
+                                        Française).</p>
                                 </div>
                             </div>
                         </div>
@@ -105,39 +120,53 @@
             </div>
         </section>
 
-        <section id="experiencia" class="py-20 bg-[#fafafa]">
+        <section id="experiencia" class="py-24" style="background-color: var(--color-bg)">
             <div class="max-w-4xl mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="font-display text-4xl font-bold text-gray-800">Trayectoria Profesional</h2>
-                    <p class="text-slate-500 mt-2 italic font-light">Haz clic para ver detalles de cada etapa</p>
+                <div class="text-center mb-16">
+                    <span class="label-text block mb-2">Historial</span>
+                    <h3 class="hero-title text-4xl mb-4">Experiencia Profesional</h3>
+                    <p class="body-text italic">Seleccione una etapa para ver detalles operativos</p>
                 </div>
-                
-                <div class="space-y-4">
-                    <div class="accordion-item bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm transition-all hover:border-[#5a8f7b]">
-                        <button class="w-full p-6 flex items-center justify-between text-left focus:outline-none" onclick="toggleAccordion(this)">
+
+                <div class="space-y-6">
+                    <div class="accordion-item card-surface rounded-2xl overflow-hidden transition-all hover:shadow-md">
+                        <button class="w-full p-8 flex items-center justify-between text-left focus:outline-none"
+                            onclick="toggleAccordion(this)">
                             <div>
-                                <h3 class="font-display text-xl font-bold text-gray-800">Auxiliar Administrativa</h3>
-                                <p class="accent-text font-medium">PROXECTO META | España <span class="text-slate-400 font-normal ml-2">2024 - Actualidad</span></p>
+                                <h4 class="section-title text-xl mb-1">Auxiliar Administrativa</h4>
+                                <p class="label-text tracking-normal normal-case"
+                                    style="color: var(--color-accent); font-weight: 600;">Proxecto Meta | España <span
+                                        class="text-slate-400 font-normal ml-2">2024 - Actualidad</span></p>
                             </div>
-                            <i class="fas fa-chevron-down chevron transition-transform text-slate-400"></i>
+                            <i class="fas fa-chevron-down chevron transition-transform text-slate-300"></i>
                         </button>
-                        <div class="accordion-content bg-[#fafafa]/50">
-                            <div class="p-6 border-t border-gray-50">
-                                <div class="grid md:grid-cols-2 gap-6">
+                        <div class="accordion-content">
+                            <div class="p-8 pt-0 border-t border-slate-50">
+                                <div class="grid md:grid-cols-2 gap-8">
                                     <div>
-                                        <h4 class="font-bold text-sm uppercase text-slate-500 mb-3 tracking-widest">Funciones & Logros</h4>
-                                        <ul class="space-y-2 text-sm text-slate-700 font-light">
-                                            <li class="flex gap-2"><i class="fas fa-check accent-text mt-1"></i> Optimización de facturación y domiciliaciones bancarias.</li>
-                                            <li class="flex gap-2"><i class="fas fa-check accent-text mt-1"></i> Redacción de protocolos administrativos bajo estándares de eficiencia.</li>
-                                            <li class="flex gap-2"><i class="fas fa-check accent-text mt-1"></i> Gestión técnica de plataforma Moodle (Soporte y Contenidos).</li>
+                                        <p class="label-text mb-4 text-xs">Principales Funciones</p>
+                                        <ul class="space-y-3 body-text text-sm">
+                                            <li class="flex gap-3"><i
+                                                    class="fas fa-circle text-[6px] mt-2 accent-icon"></i> Optimización
+                                                de facturación y domiciliaciones bancarias.</li>
+                                            <li class="flex gap-3"><i
+                                                    class="fas fa-circle text-[6px] mt-2 accent-icon"></i> Redacción de
+                                                protocolos administrativos bajo eficiencia ISO.</li>
+                                            <li class="flex gap-3"><i
+                                                    class="fas fa-circle text-[6px] mt-2 accent-icon"></i> Soporte
+                                                técnico y gestión de contenidos en Moodle.</li>
                                         </ul>
                                     </div>
-                                    <div>
-                                        <h4 class="font-bold text-sm uppercase text-slate-500 mb-3 tracking-widest">Habilidades Aplicadas</h4>
+                                    <div class="bg-slate-50 p-6 rounded-xl">
+                                        <p class="label-text mb-4 text-xs">Herramientas</p>
                                         <div class="flex flex-wrap gap-2">
-                                            <span class="bg-white px-3 py-1 rounded-full border text-xs font-medium text-gray-600">Facturación</span>
-                                            <span class="bg-white px-3 py-1 rounded-full border text-xs font-medium text-gray-600">ISO Standard</span>
-                                            <span class="bg-white px-3 py-1 rounded-full border text-xs font-medium text-gray-600">Análisis Estadístico</span>
+                                            <span
+                                                class="bg-white px-3 py-1 rounded border text-[10px] font-bold uppercase tracking-wider text-slate-500">Gestión
+                                                Documental</span>
+                                            <span
+                                                class="bg-white px-3 py-1 rounded border text-[10px] font-bold uppercase tracking-wider text-slate-500">Notion</span>
+                                            <span
+                                                class="bg-white px-3 py-1 rounded border text-[10px] font-bold uppercase tracking-wider text-slate-500">ERP</span>
                                         </div>
                                     </div>
                                 </div>
@@ -145,30 +174,37 @@
                         </div>
                     </div>
 
-                    <div class="accordion-item bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm transition-all hover:border-[#5a8f7b]">
-                        <button class="w-full p-6 flex items-center justify-between text-left focus:outline-none" onclick="toggleAccordion(this)">
+                    <div class="accordion-item card-surface rounded-2xl overflow-hidden transition-all hover:shadow-md">
+                        <button class="w-full p-8 flex items-center justify-between text-left focus:outline-none"
+                            onclick="toggleAccordion(this)">
                             <div>
-                                <h3 class="font-display text-xl font-bold text-gray-800">Profesora de Química (Ingeniería)</h3>
-                                <p class="accent-text font-medium">Universidad de Carabobo | Venezuela <span class="text-slate-400 font-normal ml-2">2011 - 2021</span></p>
+                                <h4 class="section-title text-xl mb-1">Profesora de Química (Ingeniería)</h4>
+                                <p class="label-text tracking-normal normal-case"
+                                    style="color: var(--color-accent); font-weight: 600;">Universidad de Carabobo |
+                                    Venezuela <span class="text-slate-400 font-normal ml-2">2011 - 2021</span></p>
                             </div>
-                            <i class="fas fa-chevron-down chevron transition-transform text-slate-400"></i>
+                            <i class="fas fa-chevron-down chevron transition-transform text-slate-300"></i>
                         </button>
-                        <div class="accordion-content bg-[#fafafa]/50">
-                            <div class="p-6 border-t border-gray-50">
-                                <div class="grid md:grid-cols-2 gap-6">
+                        <div class="accordion-content">
+                            <div class="p-8 pt-0 border-t border-slate-50">
+                                <div class="grid md:grid-cols-2 gap-8">
                                     <div>
-                                        <h4 class="font-bold text-sm uppercase text-slate-500 mb-3 tracking-widest">Responsabilidades</h4>
-                                        <ul class="space-y-2 text-sm text-slate-700 font-light">
-                                            <li class="flex gap-2"><i class="fas fa-flask accent-text mt-1"></i> Liderazgo de cátedras universitarias (Química I y II).</li>
-                                            <li class="flex gap-2"><i class="fas fa-flask accent-text mt-1"></i> Gestión de grupos numerosos y resolución de conflictos.</li>
-                                            <li class="flex gap-2"><i class="fas fa-flask accent-text mt-1"></i> Digitalización de contenidos educativos complejos.</li>
+                                        <p class="label-text mb-4 text-xs">Responsabilidades Científicas</p>
+                                        <ul class="space-y-3 body-text text-sm">
+                                            <li class="flex gap-3"><i
+                                                    class="fas fa-circle text-[6px] mt-2 accent-icon"></i> Liderazgo de
+                                                cátedras universitarias (Química I y II).</li>
+                                            <li class="flex gap-3"><i
+                                                    class="fas fa-circle text-[6px] mt-2 accent-icon"></i> Análisis y
+                                                resolución de problemas técnicos complejos.</li>
+                                            <li class="flex gap-3"><i
+                                                    class="fas fa-circle text-[6px] mt-2 accent-icon"></i> Organización
+                                                y planificación de recursos académicos.</li>
                                         </ul>
                                     </div>
-                                    <div>
-                                        <h4 class="font-bold text-sm uppercase text-slate-500 mb-3 tracking-widest">Aportes Transversales</h4>
-                                        <p class="text-sm text-slate-600 leading-relaxed italic font-light">
-                                            "Mi etapa docente consolidó mi capacidad de planificación y comunicación asertiva, fundamentales para la gestión administrativa de hoy."
-                                        </p>
+                                    <div class="italic body-text text-sm bg-slate-50 p-6 rounded-xl flex items-center">
+                                        "Mi etapa científica consolidó el rigor y la objetividad que hoy aplico a la
+                                        gestión administrativa."
                                     </div>
                                 </div>
                             </div>
@@ -179,65 +215,233 @@
         </section>
     </main>
 
-    <main id="portfolio-page" class="hidden min-h-screen pt-32 pb-20 px-6 bg-[#2c3e50] text-white">
+    <main id="portfolio-page" class="hidden min-h-screen pt-40 pb-24 px-6 fade-in"
+        style="background-color: var(--color-bg);">
         <div class="max-w-6xl mx-auto">
-            <button onclick="showPage('home')" class="text-[#5a8f7b] mb-6 flex items-center gap-2 hover:underline transition">
+            <button onclick="showPage('home')"
+                class="text-slate-500 mb-8 flex items-center gap-2 hover:text-slate-800 transition label-text">
                 <i class="fas fa-arrow-left"></i> Volver al inicio
             </button>
-            <h1 class="font-display text-5xl font-bold mb-4">Casos de Estudio & Habilidades Técnicas</h1>
-            <p class="text-slate-400 text-xl mb-12 max-w-2xl font-light">Muestras de mi trabajo en análisis de datos, automatización de hojas de cálculo y gestión documental avanzada.</p>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-[#34495e] p-8 rounded-3xl border border-gray-700">
-                    <div class="w-12 h-12 bg-green-500/20 text-green-400 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-file-excel text-2xl"></i>
+            <h1 class="hero-title mb-4">Casos de Estudio & Proyectos</h1>
+            <p class="body-text text-slate-600 text-lg mb-16 max-w-2xl">Demostración técnica de mis habilidades en
+                automatización, análisis de datos y control de calidad.</p>
+
+            <div
+                class="mb-16 border border-slate-200 bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50">
+                <div class="p-8 md:p-12">
+                    <div class="mb-10 border-b border-slate-100 pb-8">
+                        <div class="flex gap-3 mb-4">
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-[var(--color-accent)] rounded-full text-[var(--color-accent)] bg-[var(--color-accent)] bg-opacity-10"><i
+                                    class="fas fa-star mr-1"></i> Proyecto Destacado</span>
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-slate-200 rounded-full text-slate-600 bg-slate-50">Excel
+                                Avanzado</span>
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-slate-200 rounded-full text-slate-600 bg-slate-50">VBA
+                                Macros</span>
+                        </div>
+                        <h2 class="hero-title text-3xl md:text-4xl mb-4">Automatización de Gestión Docente y Facturación
+                        </h2>
+                        <p class="body-text text-slate-600 text-lg">Integración de fórmulas complejas y programación
+                            para reducir el tiempo administrativo a segundos.</p>
                     </div>
-                    <h3 class="font-display text-2xl font-bold mb-2">Optimización de Reportes Financieros</h3>
-                    <p class="text-slate-400 mb-6 text-sm font-light">Automatización de informes de gastos mediante tablas dinámicas y macros básicas, reduciendo el tiempo de procesamiento en un 40%.</p>
-                    <div class="flex gap-2">
-                        <span class="text-[10px] bg-slate-700 px-2 py-1 rounded text-slate-300">VLOOKUP / XLOOKUP</span>
-                        <span class="text-[10px] bg-slate-700 px-2 py-1 rounded text-slate-300">Power Query</span>
-                    </div>
-                </div>
-                <div class="bg-[#34495e] p-8 rounded-3xl border border-gray-700">
-                    <div class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-chart-pie text-2xl"></i>
-                    </div>
-                    <h3 class="font-display text-2xl font-bold mb-2">Dashboard de Control de Calidad</h3>
-                    <p class="text-slate-400 mb-6 text-sm font-light">Visualización en Power BI para el seguimiento de métricas ISO y trazabilidad de procesos administrativos.</p>
-                    <div class="flex gap-2">
-                        <span class="text-[10px] bg-slate-700 px-2 py-1 rounded text-slate-300">Power BI</span>
-                        <span class="text-[10px] bg-slate-700 px-2 py-1 rounded text-slate-300">DAX</span>
+
+                    <div class="grid lg:grid-cols-2 gap-12">
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i
+                                        class="fas fa-bullseye accent-icon"></i> El Desafío</h3>
+                                <p class="body-text text-slate-600 text-sm">En una Academia de Oposiciones, la gestión
+                                    de horarios y la facturación de los docentes es un proceso propenso a errores debido
+                                    a la constante rotación de profesores en diferentes grupos. El reto consistía en
+                                    consolidar la actividad de todos los grupos, calcular las sesiones mensuales por
+                                    profesor y generar sus facturas con datos fiscales exactos, sin intervención manual.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i
+                                        class="fas fa-cogs accent-icon"></i> La Solución Técnica</h3>
+                                <ul class="space-y-4 body-text text-slate-600 text-sm">
+                                    <li><strong class="text-gray-800 block mb-1">1. Panel de Control y Resumen:</strong>
+                                        Diseñé una hoja con selectores dinámicos y funciones de búsqueda
+                                        (<code>BUSCARV</code> / <code>VLOOKUP</code>) que extrae y cruza la información
+                                        de qué profesor estuvo frente a cada grupo en el mes seleccionado.</li>
+                                    <li><strong class="text-gray-800 block mb-1">2. Motor de Automatización
+                                            (VBA):</strong> Programé una Macro que detecta el número de docentes
+                                        activos, filtra las sesiones del mes y activa un bucle repetitivo de
+                                        procesamiento.</li>
+                                    <li><strong class="text-gray-800 block mb-1">3. Generador de Facturas:</strong> El
+                                        sistema inserta los datos fiscales automáticamente, introduce la cantidad de
+                                        clases, calcula la Base Imponible, el IRPF y el Total para cada profesor hasta
+                                        completar el ciclo.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-[rgba(90,143,123,0.05)] border border-[var(--color-accent)] p-6 rounded-2xl">
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2 flex items-center gap-2"><i
+                                        class="fas fa-chart-line accent-icon"></i> Resultados y Beneficios</h3>
+                                <p class="body-text text-slate-600 text-sm mb-0">Reducción del tiempo de facturación de
+                                    horas a minutos. Precisión absoluta en el cálculo de honorarios e impuestos. Sistema
+                                    altamente escalable preparado para la inclusión de nuevos grupos y docentes.</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6 flex flex-col justify-center">
+                            <div
+                                class="relative w-full aspect-video rounded-xl bg-slate-100 border border-slate-200 overflow-hidden group shadow-lg flex flex-col items-center justify-center text-slate-500 cursor-pointer">
+                                <div
+                                    class="absolute inset-0 flex flex-col items-center justify-center z-10 transition-transform group-hover:scale-105">
+                                    <i
+                                        class="fas fa-play-circle text-6xl mb-4 text-[var(--color-accent)] drop-shadow-md"></i>
+                                    <span
+                                        class="label-text text-gray-800 bg-white/90 px-4 py-2 rounded-full backdrop-blur-sm border border-slate-200 shadow-sm">Ver
+                                        Demostración de la Macro</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-tr from-slate-200 to-slate-100 opacity-50">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4">
+                                <div
+                                    class="rounded-xl overflow-hidden border border-slate-200 bg-slate-100 relative group aspect-[4/3]">
+                                    <img src="public/Vlookup.png" alt="Resumen de Actividad Docente con BUSCARV"
+                                        class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition duration-500">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4 text-center text-xs font-semibold text-white">
+                                        Panel Resumen Mensual</div>
+                                </div>
+                                <div
+                                    class="rounded-xl overflow-hidden border border-slate-200 bg-white relative group aspect-[4/3] flex items-center justify-center">
+                                    <img src="public/Fact_Blanco.png" alt="Plantilla de Facturación Blanca"
+                                        class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition duration-500 p-2">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4 text-center text-xs font-semibold text-white">
+                                        Plantilla Automatizada</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="mt-16 p-8 bg-[#5a8f7b]/10 border border-[#5a8f7b]/30 rounded-3xl text-center">
-                <h4 class="font-display text-2xl font-bold mb-4">¿Te gustaría ver estos archivos en detalle?</h4>
-                <p class="text-slate-300 mb-6 font-light">Contáctame para agendar una breve videollamada donde pueda mostrarte estos casos de éxito en vivo.</p>
-                <a href="mailto:Karelys.roman@gmail.com" class="cta-button text-white px-8 py-3 rounded-xl font-semibold transition">Solicitar Portfolio Completo</a>
+
+            <div
+                class="mb-16 border border-slate-200 bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50">
+                <div class="p-8 md:p-12">
+                    <div class="mb-10 border-b border-slate-100 pb-8">
+                        <div class="flex gap-3 mb-4">
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-[var(--color-accent)] rounded-full text-[var(--color-accent)] bg-[var(--color-accent)] bg-opacity-10"><i
+                                    class="fas fa-star mr-1"></i> Proyecto Destacado</span>
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-slate-200 rounded-full text-slate-600 bg-slate-50">Power
+                                BI</span>
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-slate-200 rounded-full text-slate-600 bg-slate-50">Data
+                                Analytics</span>
+                        </div>
+                        <h2 class="hero-title text-3xl md:text-4xl mb-4">Visualización Estratégica: Marketing y
+                            Construcción</h2>
+                        <p class="body-text text-slate-600 text-lg">Creación de cuadros de mando interactivos en Power
+                            BI para monitorizar métricas críticas de dos sectores empresariales distintos.</p>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-12">
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i
+                                        class="fas fa-bullseye accent-icon"></i> El Desafío</h3>
+                                <p class="body-text text-slate-600 text-sm">Los datos sin procesar dificultan la toma de
+                                    decisiones ágiles. El objetivo de este proyecto fue modelar, transformar y dar
+                                    visibilidad a los datos de dos modelos de negocio completamente diferentes: el
+                                    rendimiento de campañas de marketing digital y la gestión operativa de una
+                                    constructora.</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i
+                                        class="fas fa-desktop accent-icon"></i> Desarrollo de Dashboards</h3>
+                                <ul class="space-y-4 body-text text-slate-600 text-sm">
+                                    <li><strong class="text-gray-800 block mb-1">1. Seguimiento de Google Ads:</strong>
+                                        Creación de un panel para analizar el retorno de inversión publicitaria.
+                                        Visualización dinámica de impresiones, clics, coste por adquisición (CPA) y
+                                        evolución temporal de las campañas.</li>
+                                    <li><strong class="text-gray-800 block mb-1">2. Constructora &
+                                            Certificaciones:</strong> Diseño de un cuadro de mando integral enfocado en
+                                        la operativa empresarial. Permite auditar el volumen de proyectos activos,
+                                        filtrar por estado, analizar los márgenes de beneficio y observar la
+                                        distribución de trabajo por sectores.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-[rgba(90,143,123,0.05)] border border-[var(--color-accent)] p-6 rounded-2xl">
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2 flex items-center gap-2"><i
+                                        class="fas fa-lightbulb accent-icon"></i> Valor Aportado</h3>
+                                <p class="body-text text-slate-600 text-sm mb-0">Demostración de capacidad de adaptación
+                                    a diferentes modelos de datos (marketing vs operaciones). Los paneles interactivos
+                                    transforman miles de filas de datos en insights visuales que permiten a la gerencia
+                                    actuar con rapidez.</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6 flex flex-col justify-center">
+                            <div
+                                class="relative w-full aspect-video rounded-xl bg-slate-100 border border-slate-200 overflow-hidden group shadow-lg flex items-center justify-center">
+                                <img src="public/Tablero_Campañas.png" alt="Dashboard Google Ads Power BI"
+                                    class="w-full h-full object-cover opacity-50 group-hover:opacity-90 transition duration-500"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-xs font-semibold text-white">
+                                    <i class="fas fa-mouse-pointer mr-1"></i> Panel de Rendimiento Google Ads
+                                </div>
+                            </div>
+
+                            <div
+                                class="relative w-full aspect-video rounded-xl bg-slate-100 border border-slate-200 overflow-hidden group shadow-lg flex items-center justify-center">
+                                <img src="public/Tablero_Proyectos.png" alt="Dashboard Construcción Power BI"
+                                    class="w-full h-full object-cover opacity-50 group-hover:opacity-90 transition duration-500"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-xs font-semibold text-white">
+                                    <i class="fas fa-building mr-1"></i> Panel de Proyectos y Beneficios
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </main>
 
-    <section id="contacto" class="py-20 bg-white">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="font-display text-4xl font-bold text-gray-800 mb-8">¿Construimos algo juntos?</h2>
-            <div class="flex flex-col items-center space-y-4">
-                <a href="mailto:Karelys.roman@gmail.com" class="text-2xl font-semibold accent-text hover:underline">karelys.roman@gmail.com</a>
-                <p class="text-slate-500 text-lg flex items-center gap-2 font-light"><i class="fas fa-phone"></i> +34 672 703 899</p>
-                <div class="flex space-x-6 pt-6 text-3xl text-slate-300">
-                    <a href="https://linkedin.com" target="_blank" class="hover:text-[#5a8f7b] transition"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:Karelys.roman@gmail.com" class="hover:text-[#5a8f7b] transition"><i class="fas fa-envelope"></i></a>
+    <section id="contacto" class="bg-[var(--color-bg)] py-10">
+        <div class="max-w-xl mx-auto px-6 text-center">
+            <span class="label-text mb-2 block">Contacto</span>
+            <h2 class="hero-title text-3xl mb-4">¿Construimos algo juntos?</h2>
+
+            <div class="flex flex-col items-center space-y-3">
+                <a href="mailto:karelys.roman@gmail.com" class="text-base font-body font-semibold hover:underline"
+                    style="color: var(--color-primary);">
+                    karelys.roman@gmail.com
+                </a>
+                <p class="body-text flex items-center gap-2 text-sm">
+                    <i class="fas fa-phone accent-icon"></i> +34 672 703 899
+                </p>
+                <div class="flex space-x-4 pt-2 text-lg text-slate-400">
+                    <a href="#" class="hover:text-[var(--color-accent)] transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-[var(--color-accent)] transition"><i class="fas fa-file-pdf"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 border-t border-slate-100 text-center text-slate-400 text-xs uppercase tracking-widest bg-white">
-        <p>&copy; 2026 Karelys Román Angarita. Rigor analítico en administración.</p>
+    <footer class="py-12 border-t border-slate-50 text-center bg-white">
+        <p class="label-text text-[10px]">© 2026 Karelys Román Angarita | Trazabilidad y Excelencia Administrativa</p>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
