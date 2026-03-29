@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karelys Román | Gestión Administrativa & Calidad ISO</title>
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cinta de navegación -->
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <button onclick="showPage('home')" class="text-2xl font-display font-bold tracking-tight"
+                style="color: var(--color-primary)">KR.</button>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <button onclick="showPage('home')" class="hover:text-[var(--color-accent)] transition">Inicio</button>
+                <button onclick="showPage('about')" class="hover:text-[var(--color-accent)] transition">Sobre
+                    mí</button>
+                <button onclick="showPage('home', 'experiencia')"
+                    class="hover:text-[var(--color-accent)] transition">Experiencia</button>
+                <button onclick="showPage('portfolio')" class="font-semibold transition"
+                    style="color: var(--color-accent)">Proyectos & Excel</button>
+            </div>
+            <a href="#contacto" class="btn-primary px-6 py-2 rounded-lg text-sm font-semibold">Contáctame</a>
+        </div>
+    </nav>
+    <!-- /nav ════════════════════════════════════════ -->
+
+    <!-- ════════════════════════════════════════════
+         PÁGINA: HOME  (id="home-page")
+         Secciones: inicio · sobre-mi · experiencia · competencias
+    ════════════════════════════════════════════════ -->
+    <main id="home-page" class="fade-in">
+
+        <!-- Sección: inicio (Hero) ──────────────────── -->
+        <section id="inicio" class="pt-48 pb-32 px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-4xl">
+                    <p class="font-body text-xs md:text-sm font-bold tracking-[0.2em] mb-4 uppercase"
+                        style="color: var(--color-accent)">
+                        Bienvenido a mi portafolio
+                    </p>
+                    <h1 class="font-display font-bold text-[4.5rem] md:text-[7.5rem] leading-none mb-4"
+                        style="color: var(--color-primary); letter-spacing: -0.02em;">
+                        Karelys Román
+                    </h1>
+                    <h2 class="font-display text-3xl md:text-[3.25rem] mb-10 leading-tight"
+                        style="color: var(--color-accent);">
+                        Gestión Administrativa con rigor Analítico
+                    </h2>
+                    <p class="body-text mb-12 max-w-2xl text-lg md:text-xl text-slate-600">
+                        Fusiono la metodología científica con los estándares internacionales de calidad para optimizar
+                        procesos administrativos y financieros.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="showPage('portfolio')"
+                            class="btn-primary px-8 py-4 rounded-xl font-medium shadow-lg shadow-slate-200/50">
+                            Casos de Estudio
+                        </button>
+                        <a href="#experiencia"
+                            class="btn-accent px-8 py-4 rounded-xl font-medium transition flex items-center justify-center hover:bg-[var(--color-accent)] hover:text-white">
+                            Experiencia Laboral
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /inicio ─────────────────────────────────── -->
+
+        <!-- Sección: sobre-mi (Trayectoria) ─────────── -->
+        <section id="sobre-mi" class="py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-16 md:gap-20 items-center">
+                    <div>
+                        <span class="label-text mb-4 block" style="color: var(--color-accent)">Mi Trayectoria</span>
+                        <h3 class="hero-title text-3xl md:text-4xl mb-8">De la ciencia pura a la eficiencia operativa
+                        </h3>
+                        <div class="space-y-6 body-text text-slate-700">
+                            <p>
+                                Mi camino profesional se define por la curiosidad, el rigor y la evolución constante.
+                                Como <strong>Licenciada en Química</strong>, forjé una mentalidad analítica orientada a
+                                la resolución de problemas. Para mí, no existe una gestión administrativa sólida sin un
+                                estricto control de calidad.
+                            </p>
+                            <p>
+                                Mi traslado a España representó la oportunidad perfecta para reinventarme capitalizando
+                                mis fortalezas transversales. Al evaluar mi perfil —organización metódica, empatía y
+                                capacidad para desglosar problemas complejos— identifiqué en la administración el
+                                entorno ideal para aportar valor.
+                            </p>
+                            <p>
+                                Tras certificarme en <strong>Administración y Finanzas</strong>, hoy integro mi bagaje
+                                científico con herramientas tecnológicas modernas. Mi enfoque consiste en diseñar
+                                procesos eficientes que garanticen la <strong>trazabilidad y la mejora continua</strong>
+                                en cada operación.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative mt-8 md:mt-0">
+                        <div class="absolute -inset-4 bg-[var(--color-bg)] rounded-3xl transform rotate-3 -z-10"></div>
+
+                        <div
+                            class="card-surface p-10 md:p-12 rounded-3xl shadow-lg shadow-slate-200/50 relative overflow-hidden bg-white border border-slate-100">
+                            <i class="fas fa-quote-left absolute -left-4 -top-4 text-8xl opacity-5"
+                                style="color: var(--color-primary)"></i>
+
+                            <blockquote class="relative z-10">
+                                <p
+                                    class="font-display text-2xl md:text-3xl leading-snug text-[var(--color-primary)] font-semibold mb-8">
+                                    "La química me enseñó a entender cómo funcionan las cosas en su nivel más básico; la
+                                    administración me permite hacer que todas esas piezas funcionen de la manera más
+                                    eficiente."
+                                </p>
+                                <footer class="flex items-center gap-4 border-t border-slate-100 pt-6">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-[var(--color-accent)] flex items-center justify-center text-white font-display font-bold text-2xl shadow-sm">
+                                        KR</div>
+                                    <div>
+                                        <p class="font-bold text-slate-800 text-sm uppercase tracking-wider">Karelys
+                                            Román</p>
+                                        <p class="text-xs text-slate-500 font-medium">Gestión Administrativa</p>
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /sobre-mi ───────────────────────────────── -->
+
+        <!-- Sección: experiencia ────────────────────── -->
+        <section id="experiencia" class="py-24" style="background-color: var(--color-bg)">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="label-text block mb-2">Historial</span>
+                    <h3 class="hero-title text-4xl mb-4">Experiencia Profesional</h3>
+                    <p class="body-text italic">Seleccione una etapa para ver detalles</p>
+                </div>
+
+                <div class="space-y-6">
+
+                    <!-- accordion-item: Auxiliar Administrativa · Proxecto Meta ──── -->
+                    <div class="accordion-item card-surface rounded-2xl overflow-hidden transition-all hover:shadow-md">
+                        <button class="w-full p-8 flex items-center justify-between text-left focus:outline-none"
+                            onclick="toggleAccordion(this)">
+                            <div>
+                                <h4 class="section-title text-xl mb-1">Auxiliar Administrativa</h4>
+                                <p class="label-text tracking-normal normal-case"
+                                    style="color: var(--color-accent); font-weight: 600;">Proxecto Meta | España <span
+                                        class="text-slate-400 font-normal ml-2">2024 - Actualidad</span></p>
+                            </div>
+                            <i class="fas fa-chevron-down chevron transition-transform text-slate-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-8 pt-0 border-t border-slate-50">
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div class="space-y-6">
+                                        <div>
+                                            <p class="label-text mb-3 text-xs">Principales Funciones</p>
+                                            <ul class="space-y-3 body-text text-sm">
+                                                <li class="flex gap-3 items-start"><i
+                                                        class="fas fa-circle text-[6px] mt-2 accent-icon"></i>
+                                                    <span>Gestión administrativa y de la documentación, incluyendo la
+                                                        facturación y la domiciliación bancaria, optimizando los
+                                                        procesos y garantizando la fluidez de las operaciones.</span>
+                                                </li>
+                                                <li class="flex gap-3 items-start"><i
+                                                        class="fas fa-circle text-[6px] mt-2 accent-icon"></i>
+                                                    <span>Elaboración y redacción de protocolos para la gestión de la
+                                                        documentación y los procesos administrativos, mejorando la
+                                                        eficiencia y la estandarización de los flujos de trabajo.</span>
+                                                </li>
+                                                <li class="flex gap-3 items-start"><i
+                                                        class="fas fa-circle text-[6px] mt-2 accent-icon"></i>
+                                                    <span>Gestión de la plataforma educativa, actualización de
+                                                        contenidos, soporte y resolución de incidencias a alumnos y
+                                                        docentes.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-6">
+                                        <div
+                                            class="bg-[rgba(101,146,129,0.05)] border border-[var(--color-accent)] p-6 rounded-xl">
+                                            <p class="label-text mb-3 text-xs" style="color: var(--color-accent)">Logros
+                                                Destacados</p>
+                                            <p class="body-text text-sm">Aporté ideas y analicé estadísticas para el
+                                                desarrollo de nuevas fases del proyecto, lo que contribuyó a la
+                                                expansión de nuevas áreas y la mejora de la oferta educativa.</p>
+                                        </div>
+                                        <div>
+                                            <p class="label-text mb-3 text-xs">Herramientas</p>
+                                            <div class="flex flex-wrap gap-2">
+                                                <span
+                                                    class="bg-slate-100 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider text-slate-600 border border-slate-200">ERP</span>
+                                                <span
+                                                    class="bg-slate-100 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider text-slate-600 border border-slate-200">Moodle</span>
+                                                <span
+                                                    class="bg-slate-100 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider text-slate-600 border border-slate-200">ISO
+                                                    Docs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /accordion-item: Proxecto Meta ──────────────────────────── -->
+
+                    <!-- accordion-item: Profesora de Química · Univ. Carabobo ────── -->
+                    <div class="accordion-item card-surface rounded-2xl overflow-hidden transition-all hover:shadow-md">
+                        <button class="w-full p-8 flex items-center justify-between text-left focus:outline-none"
+                            onclick="toggleAccordion(this)">
+                            <div>
+                                <h4 class="section-title text-xl mb-1">Profesora de Química (Ingeniería)</h4>
+                                <p class="label-text tracking-normal normal-case"
+                                    style="color: var(--color-accent); font-weight: 600;">Universidad de Carabobo |
+                                    Venezuela <span class="text-slate-400 font-normal ml-2">2011 - 2021</span></p>
+                            </div>
+                            <i class="fas fa-chevron-down chevron transition-transform text-slate-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-8 pt-0 border-t border-slate-50">
+                                <div class="grid md:grid-cols-2 gap-8 mb-6">
+                                    <div class="space-y-6">
+                                        <div>
+                                            <p class="label-text mb-3 text-xs">Funciones y Responsabilidades</p>
+                                            <ul class="space-y-3 body-text text-sm">
+                                                <li class="flex gap-3 items-start"><i
+                                                        class="fas fa-circle text-[6px] mt-2 accent-icon"></i>
+                                                    <span>Profesor universitario con 10 años de experiencia impartiendo
+                                                        clases a grupos numerosos.</span>
+                                                </li>
+                                                <li class="flex gap-3 items-start"><i
+                                                        class="fas fa-circle text-[6px] mt-2 accent-icon"></i>
+                                                    <span>Jefe de las cátedras de Química I y II, demostrando
+                                                        habilidades de gestión y organización.</span>
+                                                </li>
+                                                <li class="flex gap-3 items-start"><i
+                                                        class="fas fa-circle text-[6px] mt-2 accent-icon"></i>
+                                                    <span>Responsable de la creación y gestión de contenido en Moodle,
+                                                        así como de la elaboración y carga de material digital para el
+                                                        aprendizaje efectivo de los estudiantes.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-6">
+                                        <div
+                                            class="bg-[rgba(101,146,129,0.05)] border border-[var(--color-accent)] p-6 rounded-xl h-full">
+                                            <p class="label-text mb-3 text-xs" style="color: var(--color-accent)">Logros
+                                                Destacados</p>
+                                            <ul class="space-y-3 body-text text-sm">
+                                                <li class="flex gap-3 items-start"><i
+                                                        class="fas fa-circle text-[6px] mt-2 accent-icon"></i>
+                                                    <span>Diseño e implementación de evaluaciones automatizadas en
+                                                        plataforma educativa.</span>
+                                                </li>
+                                                <li class="flex gap-3 items-start"><i
+                                                        class="fas fa-circle text-[6px] mt-2 accent-icon"></i>
+                                                    <span>Participación activa en el diseño curricular para garantizar
+                                                        la excelencia académica.</span>
+                                                </li>
+                                                <li class="flex gap-3 items-start"><i
+                                                        class="fas fa-circle text-[6px] mt-2 accent-icon"></i>
+                                                    <span>Gestión efectiva de incidencias como jefe de cátedra.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="italic body-text text-sm bg-slate-50 p-6 rounded-xl flex flex-col justify-center items-center text-center text-slate-600 border border-slate-100">
+                                    <i class="fas fa-quote-left text-2xl mb-3 text-slate-300"></i>
+                                    "Mi etapa científica y académica consolidó el rigor, la empatía y la objetividad que
+                                    hoy aplico a la gestión administrativa."
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /accordion-item: Univ. Carabobo ─────────────────────────── -->
+                </div>
+            </div>
+        </section>
+        <!-- /experiencia ────────────────────────────── -->
+
+        <!-- Sección: competencias ───────────────────── -->
+        <section id="competencias" class="py-24 bg-white border-y border-slate-100">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h3 class="hero-title text-4xl mb-4">Competencias de Valor</h3>
+                    <p class="body-text max-w-2xl mx-auto">Sinergia operativa entre filosofía de estandarización,
+                        análisis de datos y comunicación efectiva aplicada a la búsqueda de soluciones.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="card-surface p-10 rounded-3xl transition hover:shadow-xl hover:-translate-y-1 duration-300">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-[rgba(101,146,129,0.1)] flex items-center justify-center mb-6">
+                            <i class="fas fa-clipboard-check text-2xl accent-icon"></i>
+                        </div>
+                        <h4 class="section-title text-xl mb-4">Normas ISO & Procesos</h4>
+                        <p class="body-text text-sm">Orientación total a la calidad, la trazabilidad y la mejora
+                            continua. Diseño, auditoría y estandarización de flujos de trabajo bajo normativas
+                            internacionales para garantizar la máxima eficiencia operativa.</p>
+                    </div>
+
+                    <div
+                        class="card-surface p-10 rounded-3xl transition hover:shadow-xl hover:-translate-y-1 duration-300">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-[rgba(101,146,129,0.1)] flex items-center justify-center mb-6">
+                            <i class="fas fa-chart-line text-2xl accent-icon"></i>
+                        </div>
+                        <h4 class="section-title text-xl mb-4">Análisis Avanzado</h4>
+                        <p class="body-text text-sm">Dominio experto de Excel (VBA, Macros, Power Query) y Power BI.
+                            Capacidad para transformar grandes volúmenes de datos sin procesar en cuadros de mando
+                            interactivos que facilitan la toma de decisiones.</p>
+                    </div>
+
+                    <div
+                        class="card-surface p-10 rounded-3xl transition hover:shadow-xl hover:-translate-y-1 duration-300">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-[rgba(101,146,129,0.1)] flex items-center justify-center mb-6">
+                            <i class="fas fa-globe text-2xl accent-icon"></i>
+                        </div>
+                        <h4 class="section-title text-xl mb-4">Comunicación e Idiomas</h4>
+                        <p class="body-text text-sm">Dominio avanzado de Inglés C1.1 (EOI) y Francés A2 (Alliance
+                            Française). Capacidad demostrada para gestionar proyectos, documentación y comunicación
+                            asertiva en equipos de trabajo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /competencias ───────────────────────────── -->
+
+    </main>
+    <!-- /main: HOME ═════════════════════════════════ -->
+
+    <!-- ════════════════════════════════════════════
+         PÁGINA: SOBRE MÍ  (id="about-page")
+         Secciones: artículo · #maquinita · #anecdotas-universidad
+    ════════════════════════════════════════════════ -->
+    <main id="about-page" class="hidden min-h-screen pt-40 pb-24 px-6 fade-in"
+        style="background-color: var(--color-bg);">
+        <div class="max-w-3xl mx-auto">
+            <button onclick="showPage('home')"
+                class="text-slate-500 mb-10 flex items-center gap-2 hover:text-slate-800 transition label-text">
+                <i class="fas fa-arrow-left"></i> Volver al inicio
+            </button>
+
+            <header class="mb-10">
+                <h1 class="hero-title text-5xl md:text-6xl mb-6">¿Quién es Karelys?</h1>
+            </header>
+
+            <article class="prose prose-lg prose-slate max-w-none body-text space-y-8 text-slate-700">
+                <p>
+                    ¡Hola! Es probable que tengas curiosidad por saber cómo una licenciada en
+                    química terminó apasionada por la gestión administrativa y la resolución de problemas.
+                </p>
+
+                <p>
+                    Soy una persona de naturaleza calmada, pero de mente inquieta. Mi curiosidad me llevó a estudiar
+                    Química, una carrera que no solo se me daba bien, sino que me permitió graduarme con mención
+                    honorífica y publicar mi tesis.
+                    <a href="public/Articulo.pdf" target="_blank" class="font-semibold text-[var(--color-accent)] hover:underline">(Ver la
+                        publicación aquí)</a>.
+                </p>
+
+                <p>
+                    Mis primeros pasos fueron en la industria, donde me gané el apodo de "la maquinita" por mi
+                    eficiencia y ritmo de trabajo
+                    <a href="#maquinita"
+                        onclick="setTimeout(()=>{document.getElementById('maquinita').scrollIntoView({behavior:'smooth'})},100)"
+                        class="font-semibold text-[var(--color-accent)] hover:underline">(si quieres leer la anécdota
+                        completa, pincha aquí)</a>.
+                    Sin embargo, la academia me llamaba. Estuve algunos semestres dando clases como contratada en
+                    diferentes facultades, hasta que llegó un reto inesperado.
+                </p>
+
+                <div class="pt-6">
+                    <h3 class="font-display text-3xl font-bold text-[var(--color-primary)] mb-4">El "concurso de
+                        práctica" que cambió todo</h3>
+                    <p>
+                        Se abrió un concurso de oposición para una plaza fija en Ingeniería. La cantidad de concursantes
+                        era descomunal porque hacía años que no se abrían vacantes. Allí estaba yo: recién graduada y
+                        con una única publicación bajo el brazo.
+                    </p>
+                    <p>
+                        Me tomé el examen sin estrés, dando por hecho que sería simplemente un "concurso de práctica",
+                        pues sabía que pronto abrirían plazas en mi propia facultad (Ciencias y Tecnología). Pero, para
+                        mi sorpresa y contra todo pronóstico, obtuve una plaza fija en la Facultad de Ingeniería.
+                    </p>
+                </div>
+
+                <div class="pt-6">
+                    <h3 class="font-display text-3xl font-bold text-[var(--color-primary)] mb-4">De los auditorios a la
+                        gestión de soluciones</h3>
+                    <p>
+                        Allí pasé más de una década, moviéndome entre auditorios y secciones de 100 alumnos. Fue un reto
+                        enorme pero gratificante. Esa etapa fue mi mejor escuela de metodología, empatía y rigurosidad.
+                        Como Jefe de Cátedra de Química I y II, aprendí que la excelencia académica no solo ocurre en el
+                        aula, sino que nace de una gestión administrativa impecable y de una colaboración estrecha entre
+                        equipos.
+                        <a href="#anecdotas-universidad"
+                            onclick="setTimeout(()=>{document.getElementById('anecdotas-universidad').scrollIntoView({behavior:'smooth'})},100)"
+                            class="font-semibold text-[var(--color-accent)] hover:underline ml-1">(De estos años tengo
+                            varias anécdotas, si quieres saber mas, pulsa aquí)</a>
+                    </p>
+                </div>
+
+                <div class="pt-6 border-b border-slate-200 pb-12">
+                    <h3 class="font-display text-3xl font-bold text-[var(--color-primary)] mb-4">El "clic" y el giro
+                        hacia la administración</h3>
+                    <p>
+                        Llegó un punto en que la situación del país me obligó a tomar una decisión. Veía cómo mis
+                        alumnos se despedían para buscar nuevos horizontes, hasta que un día yo también hice "clic". A
+                        veces, los cambios de entorno nos obligan a reinventarnos. Al cambiar de país, decidí que no
+                        solo cambiaría mi ubicación, sino que asumiría el reto de volcar toda mi experiencia en el área
+                        administrativa.
+                    </p>
+                    <p>
+                        ¿Qué hace una química en administración? Aplicar un espíritu meticuloso y proactivo. Para mí,
+                        las situaciones que otros ven como problemas son, en realidad, oportunidades para evaluar
+                        variables y diseñar caminos de respuesta.
+                    </p>
+                    <p>
+                        Muchas veces nos enfocamos solo en lo que falta, pero mi experiencia me dice que la solución
+                        suele estar ahí, esperando a ser vista. Mi enfoque se basa en algo que siempre le decía a mis
+                        estudiantes:
+                    </p>
+
+                    <blockquote
+                        class="my-8 border-l-4 border-[var(--color-accent)] pl-6 py-2 bg-white rounded-r-lg italic text-xl font-medium text-slate-800 shadow-sm">
+                        "Para encontrar la respuesta, primero debes entender el fenómeno".
+                    </blockquote>
+
+                    <p>
+                        No creo en aplicar fórmulas a ciegas para ver cuál "encaja". Creo en entender el proceso a fondo
+                        para optimizarlo. Mi experiencia me ha enseñado que los datos para resolver cualquier situación
+                        suele estar ahí; solo hace falta una mirada analítica y resolutiva para verlos y transformarlos
+                        en soluciones reales.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Anécdota: La Maquinita (id="maquinita") ──────────────────── -->
+            <div id="maquinita" class="mt-16 rounded-3xl p-8 md:p-12 shadow-sm relative overflow-hidden"
+                style="background-color: rgba(101,146,129,0.08); border: 1px solid rgba(101,146,129,0.2);">
+                <i class="fas fa-cogs absolute -right-6 -top-6 text-8xl opacity-5"
+                    style="color: var(--color-primary)"></i>
+
+                <div class="relative z-10">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span
+                            class="bg-[var(--color-accent)] text-white text-[10px] font-bold uppercase tracking-widest py-1 px-3 rounded-full">Anécdota</span>
+                        <h3 class="font-display text-3xl font-bold text-[var(--color-primary)]">La historia de "La
+                            Maquinita"</h3>
+                    </div>
+
+                    <div class="space-y-4 body-text text-slate-700 text-sm md:text-base">
+                        <p class="italic font-medium text-slate-500 mb-6">Es curioso cómo un apodo puede definir tan
+                            bien a una persona en una situación particular.</p>
+
+                        <p>Todo comenzó durante mis prácticas en <strong>Colgate-Palmolive</strong> (Valencia,
+                            Venezuela). Me asignaron a la planta de líquidos porque la analista titular tenía tres meses
+                            de baja médica. El Sr. Henry, analista de la planta de jabones, me dio las instrucciones
+                            básicas sobre los análisis de materia prima y producto en proceso, me dejó frente a un mesón
+                            con <strong>más de 300 muestras acumuladas</strong> por analizar y me dijo: <em
+                                class="text-slate-800">"¡Hala, diviértete!"</em>.</p>
+
+                        <p>Para cualquiera, ese panorama habría sido abrumador. Para mí, siendo metódica por naturaleza,
+                            fue simplemente una meta por cumplir.</p>
+
+                        <p>Cada día era de las primeras en llegar al laboratorio. Antes de que el movimiento empezara,
+                            yo ya tenía mi jornada organizada: sabía perfectamente qué hacer y cómo priorizar. Poco
+                            tiempo después, el Sr. Henry, que solía llegar justo después de mí, empezó a bromear al
+                            entrar: <em class="text-slate-800">"Miren, ya 'la maquinita' está trabajando"</em>.</p>
+
+                        <p>Así nació el apodo que me acompañó durante todas mis prácticas. ¿El resultado? <strong>En
+                                apenas un mes, las 300 muestras estaban analizadas</strong> y la planta de líquidos
+                            estaba totalmente al día.</p>
+
+                        <div class="mt-8 pt-6 border-t border-[rgba(101,146,129,0.2)]">
+                            <p class="font-medium text-[var(--color-primary)]">
+                                <i class="fas fa-lightbulb text-[var(--color-accent)] mr-2"></i> Esta experiencia me
+                                enseñó algo fundamental sobre mí: soy una persona de retos, objetivos y estrategias. Una
+                                vez que analizo las variables, trazo un plan y fijo una meta, no me detengo hasta
+                                alcanzarla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /maquinita ──────────────────────────────── -->
+
+            <!-- Anécdota: Universidad de Ingeniería (id="anecdotas-universidad") -->
+            <div id="anecdotas-universidad"
+                class="mt-8 bg-white border border-slate-200 rounded-3xl p-8 md:p-12 shadow-sm relative overflow-hidden">
+                <i class="fas fa-graduation-cap absolute -right-6 -top-6 text-8xl opacity-5"
+                    style="color: var(--color-primary)"></i>
+
+                <div class="relative z-10">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span
+                            class="bg-slate-800 text-white text-[10px] font-bold uppercase tracking-widest py-1 px-3 rounded-full">Anécdotas</span>
+                        <h3 class="font-display text-3xl font-bold text-[var(--color-primary)]">Retazos de mi etapa en
+                            Ingeniería</h3>
+                    </div>
+
+                    <div class="space-y-8 body-text text-slate-700 text-sm md:text-base">
+                        <p class="italic font-medium text-slate-500">Mis años en la facultad no fueron solo pizarras y
+                            laboratorios; fueron mi mayor campo de entrenamiento en gestión, tecnología y trabajo en
+                            equipo. Aquí algunas experiencias que me marcaron:</p>
+
+                        <div class="space-y-2 border-l-2 border-[var(--color-accent)] pl-4">
+                            <h4 class="font-bold text-[var(--color-primary)] text-lg flex items-center gap-2">
+                                <i class="fas fa-cogs text-[var(--color-accent)]"></i> El reto de los 300: De la
+                                corrección manual a la automatización
+                            </h4>
+                            <p>Química I es el tronco común de cinco carreras de ingeniería. Esto se traduce en
+                                secciones de 100 alumnos y la titánica tarea de evaluar a 300 estudiantes por semestre.
+                            </p>
+                            <p>En lugar de resignarme a las montañas de papel, me alié con el Prof. Luis (un visionario
+                                del Aula Virtual) para darle vida a una plataforma que en ese entonces casi nadie usaba.
+                                Aprendí sobre la marcha a generar bancos de cientos de preguntas aleatorias y automaticé
+                                los procesos de evaluación.</p>
+                            <div class="mt-3 bg-slate-50 p-4 rounded-lg border border-slate-100 text-sm">
+                                <strong class="text-[var(--color-accent)]">Lección aprendida:</strong> Si tienes una
+                                tarea repetitiva, diseña un mecanismo para automatizarla. La eficiencia es una decisión.
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 border-l-2 border-[var(--color-accent)] pl-4">
+                            <h4 class="font-bold text-[var(--color-primary)] text-lg flex items-center gap-2">
+                                <i class="fas fa-hands-helping text-[var(--color-accent)]"></i> Proyectos Comunitarios:
+                                Ciencia con impacto social
+                            </h4>
+                            <p>Como parte de la formación integral, coordiné junto a otros profesores proyectos donde
+                                los estudiantes aplicaban sus conocimientos en beneficio de la comunidad. Mi labor era
+                                diseñar, acompañar y supervisar que las actividades planteadas se tradujeran en
+                                soluciones reales.</p>
+                            <div class="mt-3 bg-slate-50 p-4 rounded-lg border border-slate-100 text-sm">
+                                <strong class="text-[var(--color-accent)]">Habilidad clave:</strong> Coordinación de
+                                equipos, planificación estratégica y mentoría.
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 border-l-2 border-[var(--color-accent)] pl-4">
+                            <h4 class="font-bold text-[var(--color-primary)] text-lg flex items-center gap-2">
+                                <i class="fas fa-globe-americas text-[var(--color-accent)]"></i> Beca OEA – Uniandes:
+                                Investigación sin fronteras
+                            </h4>
+                            <p>Durante mi posgrado, tuve la oportunidad de realizar una estancia de investigación en la
+                                Universidad de los Andes (Colombia), financiada por la OEA. Durante cuatro meses, me
+                                sumergí en un entorno interdisciplinario en el Laboratorio de Sólidos Porosos,
+                                trabajando codo a codo con investigadores locales y colegas de toda Latinoamérica.</p>
+                            <div class="mt-3 bg-slate-50 p-4 rounded-lg border border-slate-100 text-sm">
+                                <strong class="text-[var(--color-accent)]">Habilidad clave:</strong> Adaptabilidad
+                                cultural, investigación de alto nivel y colaboración internacional.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- /main: SOBRE MÍ ════════════════════════════ -->
+
+    <!-- ════════════════════════════════════════════
+         PÁGINA: PORTFOLIO  (id="portfolio-page")
+         Proyectos: 1. Excel/VBA · 2. Power BI
+    ════════════════════════════════════════════════ -->
+    <main id="portfolio-page" class="hidden min-h-screen pt-40 pb-24 px-6 fade-in"
+        style="background-color: var(--color-bg);">
+        <div class="max-w-6xl mx-auto">
+            <button onclick="showPage('home')"
+                class="text-slate-500 mb-8 flex items-center gap-2 hover:text-slate-800 transition label-text">
+                <i class="fas fa-arrow-left"></i> Volver al inicio
+            </button>
+            <h1 class="hero-title mb-4">Casos de Estudio & Proyectos</h1>
+            <p class="body-text text-slate-600 text-lg mb-16 max-w-2xl">Demostración técnica de mis habilidades en
+                automatización, análisis de datos y control de calidad.</p>
+
+            <!-- Proyecto 1: Automatización Gestión Docente y Facturación  (Excel / VBA) -->
+            <div
+                class="mb-16 border border-slate-200 bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50">
+                <div class="p-8 md:p-12">
+                    <div class="mb-10 border-b border-slate-100 pb-8">
+                        <div class="flex gap-3 mb-4">
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-[var(--color-accent)] rounded-full text-[var(--color-accent)] bg-[var(--color-accent)] bg-opacity-10"><i
+                                    class="fas fa-star mr-1"></i> Proyecto Destacado</span>
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-slate-200 rounded-full text-slate-600 bg-slate-50">Excel
+                                Avanzado</span>
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-slate-200 rounded-full text-slate-600 bg-slate-50">VBA
+                                Macros</span>
+                        </div>
+                        <h2 class="hero-title text-3xl md:text-4xl mb-4">Automatización de Gestión Docente y Facturación
+                        </h2>
+                        <p class="body-text text-slate-600 text-lg">Integración de fórmulas complejas y programación
+                            para reducir el tiempo administrativo a segundos.</p>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-12">
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i
+                                        class="fas fa-bullseye accent-icon"></i> El Desafío</h3>
+                                <p class="body-text text-slate-600 text-sm">En una Academia de Oposiciones, la gestión
+                                    de horarios y la facturación de los docentes es un proceso propenso a errores debido
+                                    a la constante rotación de profesores en diferentes grupos. El reto consistía en
+                                    consolidar la actividad de todos los grupos, calcular las sesiones mensuales por
+                                    profesor y generar sus facturas con datos fiscales exactos, sin intervención manual.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i
+                                        class="fas fa-cogs accent-icon"></i> La Solución Técnica</h3>
+                                <ul class="space-y-4 body-text text-slate-600 text-sm">
+                                    <li><strong class="text-gray-800 block mb-1">1. Panel de Control y Resumen:</strong>
+                                        Diseñé una hoja con selectores dinámicos y funciones de búsqueda
+                                        (<code>BUSCARV</code> / <code>VLOOKUP</code>) que extrae y cruza la información
+                                        de qué profesor estuvo frente a cada grupo en el mes seleccionado.</li>
+                                    <li><strong class="text-gray-800 block mb-1">2. Motor de Automatización
+                                            (VBA):</strong> Programé una Macro que detecta el número de docentes
+                                        activos, filtra las sesiones del mes y activa un bucle repetitivo de
+                                        procesamiento.</li>
+                                    <li><strong class="text-gray-800 block mb-1">3. Generador de Facturas:</strong> El
+                                        sistema inserta los datos fiscales automáticamente, introduce la cantidad de
+                                        clases, calcula la Base Imponible, el IRPF y el Total para cada profesor hasta
+                                        completar el ciclo.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-[rgba(90,143,123,0.05)] border border-[var(--color-accent)] p-6 rounded-2xl">
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2 flex items-center gap-2"><i
+                                        class="fas fa-chart-line accent-icon"></i> Resultados y Beneficios</h3>
+                                <p class="body-text text-slate-600 text-sm mb-0">Reducción del tiempo de facturación de
+                                    horas a minutos. Precisión absoluta en el cálculo de honorarios e impuestos. Sistema
+                                    altamente escalable preparado para la inclusión de nuevos grupos y docentes.</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6 flex flex-col justify-center">
+
+                            <div
+                                class="relative w-full aspect-video rounded-xl bg-slate-100 border border-slate-200 overflow-hidden group shadow-lg flex flex-col items-center justify-center text-slate-500 cursor-pointer">
+                                <div class="absolute inset-0 bg-gradient-to-tr from-slate-200 to-slate-100">
+                                    <video src="public/Grabación_macro.mp4" controls autoplay muted playsinline
+                                        class="w-full h-full object-cover"></video>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4">
+                                <div
+                                    class="rounded-xl overflow-hidden border border-slate-200 bg-slate-100 relative group aspect-[4/3]">
+                                    <img src="public/Vlookup.png" alt="Resumen de Actividad Docente con BUSCARV"
+                                        class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition duration-500">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4 text-center text-xs font-semibold text-white">
+                                        Panel Resumen Mensual</div>
+                                </div>
+                                <div
+                                    class="rounded-xl overflow-hidden border border-slate-200 bg-white relative group aspect-[4/3] flex items-center justify-center">
+                                    <img src="public/Fact_Blanco.png" alt="Plantilla de Facturación Blanca"
+                                        class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition duration-500 p-2">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4 text-center text-xs font-semibold text-white">
+                                        Plantilla Automatizada</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Proyecto 1: Excel/VBA ──────────────────── -->
+
+            <!-- Proyecto 2: Visualización Estratégica  (Power BI) ──────────── -->
+            <div
+                class="mb-16 border border-slate-200 bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50">
+                <div class="p-8 md:p-12">
+                    <div class="mb-10 border-b border-slate-100 pb-8">
+                        <div class="flex gap-3 mb-4">
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-[var(--color-accent)] rounded-full text-[var(--color-accent)] bg-[var(--color-accent)] bg-opacity-10"><i
+                                    class="fas fa-star mr-1"></i> Proyecto Destacado</span>
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-slate-200 rounded-full text-slate-600 bg-slate-50">Power
+                                BI</span>
+                            <span
+                                class="label-text text-[10px] py-1 px-3 border border-slate-200 rounded-full text-slate-600 bg-slate-50">Data
+                                Analytics</span>
+                        </div>
+                        <h2 class="hero-title text-3xl md:text-4xl mb-4">Visualización Estratégica: Marketing y
+                            Construcción</h2>
+                        <p class="body-text text-slate-600 text-lg">Creación de cuadros de mando interactivos en Power
+                            BI para monitorizar métricas críticas de dos sectores empresariales distintos.</p>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-12">
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i
+                                        class="fas fa-bullseye accent-icon"></i> El Desafío</h3>
+                                <p class="body-text text-slate-600 text-sm">Los datos sin procesar dificultan la toma de
+                                    decisiones ágiles. El objetivo de este proyecto fue modelar, transform y dar
+                                    visibilidad a los datos de dos modelos de negocio completamente diferentes: el
+                                    rendimiento de campañas de marketing digital y la gestión operativa de una
+                                    constructora.</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i
+                                        class="fas fa-desktop accent-icon"></i> Desarrollo de Dashboards</h3>
+                                <ul class="space-y-4 body-text text-slate-600 text-sm">
+                                    <li><strong class="text-gray-800 block mb-1">1. Seguimiento de Google Ads:</strong>
+                                        Creación de un panel para analizar el retorno de inversión publicitaria.
+                                        Visualización dinámica de impresiones, clics, coste por adquisición (CPA) y
+                                        evolución temporal de las campañas.</li>
+                                    <li><strong class="text-gray-800 block mb-1">2. Constructora &
+                                            Certificaciones:</strong> Diseño de un cuadro de mando integral enfocado en
+                                        la operativa empresarial. Permite auditar el volumen de proyectos activos,
+                                        filtrar por estado, analizar los márgenes de beneficio y observar la
+                                        distribución de trabajo por sectores.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-[rgba(90,143,123,0.05)] border border-[var(--color-accent)] p-6 rounded-2xl">
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2 flex items-center gap-2"><i
+                                        class="fas fa-lightbulb accent-icon"></i> Valor Aportado</h3>
+                                <p class="body-text text-slate-600 text-sm mb-0">Demostración de capacidad de adaptación
+                                    a diferentes modelos de datos (marketing vs operaciones). Los paneles interactivos
+                                    transforman miles de filas de datos en insights visuales que permiten a la gerencia
+                                    actuar con rapidez.</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6 flex flex-col justify-center">
+
+                            <div
+                                class="relative w-full aspect-video rounded-xl bg-slate-100 border border-slate-200 overflow-hidden group shadow-lg flex items-center justify-center">
+                                <img src="public/Tablero_Campañas.png" alt="Dashboard Google Ads Power BI"
+                                    class="w-full h-full object-cover opacity-50 group-hover:opacity-90 transition duration-500"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                                <div
+                                    class="absolute inset-0 flex flex-col items-center justify-center text-slate-400 hidden">
+                                    <i class="fas fa-chart-bar text-5xl mb-3 text-slate-300"></i>
+                                    <p class="text-sm font-medium">[Imagen: Dashboard Google Ads]</p>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-xs font-semibold text-white">
+                                    <i class="fas fa-mouse-pointer mr-1"></i> Panel de Rendimiento Google Ads
+                                </div>
+                            </div>
+
+                            <div
+                                class="relative w-full aspect-video rounded-xl bg-slate-100 border border-slate-200 overflow-hidden group shadow-lg flex items-center justify-center">
+                                <img src="public/Tablero_Proyectos.png" alt="Dashboard Construcción Power BI"
+                                    class="w-full h-full object-cover opacity-50 group-hover:opacity-90 transition duration-500"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                                <div
+                                    class="absolute inset-0 flex flex-col items-center justify-center text-slate-400 hidden">
+                                    <i class="fas fa-hard-hat text-5xl mb-3 text-slate-300"></i>
+                                    <p class="text-sm font-medium">[Imagen: Dashboard Construcción]</p>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-xs font-semibold text-white">
+                                    <i class="fas fa-building mr-1"></i> Panel de Proyectos y Beneficios
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Proyecto 2: Power BI ───────────────────── -->
+
+        </div>
+    </main>
+    <!-- /main: PORTFOLIO ════════════════════════════ -->
+
+    <!-- Sección: contacto ───────────────────────── -->
+    <section id="contacto" class="bg-[var(--color-bg)] py-10">
+        <div class="max-w-xl mx-auto px-6 text-center">
+            <span class="label-text mb-2 block">Contacto</span>
+            <h2 class="hero-title text-3xl mb-4">¿Construimos algo juntos?</h2>
+
+            <div class="flex flex-col items-center space-y-3">
+                <a href="mailto:karelys.roman@gmail.com" class="text-base font-body font-semibold hover:underline"
+                    style="color: var(--color-primary);">
+                    karelys.roman@gmail.com
+                </a>
+                <p class="body-text flex items-center gap-2 text-sm">
+                    <i class="fas fa-phone accent-icon"></i> +34 672 703 899
+                </p>
+                <div class="flex space-x-4 pt-2 text-lg text-slate-400">
+                    <a href="https://www.linkedin.com/in/karelys-rom%C3%A1n/" target="_blank"
+                        class="hover:text-[var(--color-accent)] transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="public/Karelys Román CV.pdf" target="_blank"
+                        class="hover:text-[var(--color-accent)] transition"><i class="fas fa-file-pdf"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /contacto ───────────────────────────────── -->
+
+    <!-- Footer con derechos de autor y créditos -->
+    <footer class="py-12 border-t border-slate-50 text-center bg-white">
+        <p class="label-text text-[10px]">© 2026 Karelys Román Angarita | Trazabilidad y Excelencia Administrativa</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
